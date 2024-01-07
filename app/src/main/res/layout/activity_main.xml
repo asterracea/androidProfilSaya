@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--mengatur tampilan background atas-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- memberi tulisan my profile -->
+                <TextView
+                    android:id="@+id/myprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="*˚✧My Profile˚ ♡⋆"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+                </TextView>
+
+                <!--memberi foto profil-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/alip"
+                    android:id="@+id/aku"
+                    android:layout_marginBottom="10dp">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--mengatur kotak yang berisi informasi biodata-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/kotak">
+
+        <!--menambahkan kotak nama dari file drawable yang telah dibuat-->
+        <LinearLayout
+            android:background="@drawable/kotakputih"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+        <!-- memberi textview untuk menambahkan text berisi nama-->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama : Alieffiea Widya P."
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+
+                android:typeface="serif"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!--menambahkan kotak NIM dari file drawable yang telah dibuat-->
+        <LinearLayout
+            android:background="@drawable/kotakputih"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <!-- memberi textview untuk menambahkan text berisi NIM-->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NIM : 223307031"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp">
+            </TextView>
+        </LinearLayout>
+
+        <!--menambahkan kotak TTL dari file drawable yang telah dibuat-->
+        <LinearLayout
+            android:background="@drawable/kotakputih"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <!-- memberi textview untuk menambahkan text berisi TTL-->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TTL : Magetan, 27 Maret 2003"
+                android:typeface="serif"
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+
+        <!--menambahkan kotak Alamat dari file drawable yang telah dibuat-->
+        <LinearLayout
+            android:background="@drawable/kotakputih"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <!-- memberi textview untuk menambahkan text berisi Alamat-->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Alamat : Tinap, Sukomoro"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+
+        <!--menambahkan kotak Riwayat Pendidikan dari file drawable yang telah dibuat-->
+        <LinearLayout
+            android:background="@drawable/ktkbwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Pendidikan : "
+                android:layout_marginLeft="20dp"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/ktkputih"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <!-- memberi textview untuk menambahkan text berisi Riwayat Pendidikan-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=
+                    "- SMAN 1 Maospati
+                            - SMPN 1 Maospati
+                                - SDN Ngadirejo 2"
+                android:layout_marginLeft="20dp"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnNama"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="click"
+            />
+    </LinearLayout>
+</LinearLayout>
+</layout>
